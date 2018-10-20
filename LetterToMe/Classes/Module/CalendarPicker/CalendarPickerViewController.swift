@@ -52,7 +52,7 @@ class CalendarPickerViewController: UIViewController {
         guard let validCell = cell as? CalendarPickerCollectionViewCell else{
             return
         }
-        if validCell.isSelected {
+        if cellState.isSelected {
             validCell.backgroundColor = #colorLiteral(red: 0.1204764023, green: 0.8298364282, blue: 0.3741646707, alpha: 1)
             validCell.dateLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             

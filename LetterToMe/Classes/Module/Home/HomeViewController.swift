@@ -14,6 +14,9 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let calendarView = UINib.init(nibName: "CalendarPickerViewController", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? CalendarPickerViewController {
+            self.view.addSubview(calendarView.view)
+        }
         // Do any additional setup after loading the view.
     }
 

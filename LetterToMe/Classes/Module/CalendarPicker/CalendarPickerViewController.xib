@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarPickerViewController" customModule="LetterToMe" customModuleProvider="target">
             <connections>
-                <outlet property="BottomContentView" destination="dtY-2F-9T0" id="efC-xL-yR2"/>
+                <outlet property="BottomContentView" destination="dtY-2F-9T0" id="JXM-QQ-9FB"/>
                 <outlet property="collectionView" destination="q5M-li-ecg" id="xYQ-wq-VXX"/>
                 <outlet property="currentDate" destination="1S5-Ly-SLh" id="CLt-cW-mxL"/>
                 <outlet property="selectedButton" destination="yul-p3-GTD" id="MFR-X5-0cA"/>
