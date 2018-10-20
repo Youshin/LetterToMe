@@ -16,6 +16,7 @@
 		7A18D6F3217AF95D00BA3D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A18D6F1217AF95D00BA3D22 /* LaunchScreen.storyboard */; };
 		7A18D6FE217AF95D00BA3D22 /* LetterToMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18D6FD217AF95D00BA3D22 /* LetterToMeTests.swift */; };
 		7A18D709217AF95D00BA3D22 /* LetterToMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18D708217AF95D00BA3D22 /* LetterToMeUITests.swift */; };
+		7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A92C2B9217B187700A26298 /* CustomTabBarController.swift */; };
 		ABBDB214FA9915596180AD81 /* Pods_LetterToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6F01CEE806788D81682822 /* Pods_LetterToMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		7A18D704217AF95D00BA3D22 /* LetterToMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetterToMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A18D708217AF95D00BA3D22 /* LetterToMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterToMeUITests.swift; sourceTree = "<group>"; };
 		7A18D70A217AF95E00BA3D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A92C2B9217B187700A26298 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		866CF5EBB2C09F38842FCC4F /* Pods-LetterToMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMe/Pods-LetterToMe.release.xcconfig"; sourceTree = "<group>"; };
 		9302FFBB16872BAFAD0BCC96 /* Pods_LetterToMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetterToMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A319BC6DD0432A4DD7D3FE95 /* Pods-LetterToMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeUITests/Pods-LetterToMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				7A18D6EF217AF95D00BA3D22 /* Assets.xcassets */,
 				7A18D6F1217AF95D00BA3D22 /* LaunchScreen.storyboard */,
 				7A18D6F4217AF95D00BA3D22 /* Info.plist */,
+				7A92C2B9217B187700A26298 /* CustomTabBarController.swift */,
 			);
 			path = LetterToMe;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			files = (
 				7A18D6EB217AF95B00BA3D22 /* ViewController.swift in Sources */,
 				7A18D6E9217AF95B00BA3D22 /* AppDelegate.swift in Sources */,
+				7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
