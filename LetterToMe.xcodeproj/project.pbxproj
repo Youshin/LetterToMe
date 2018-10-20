@@ -18,6 +18,17 @@
 		7A18D709217AF95D00BA3D22 /* LetterToMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18D708217AF95D00BA3D22 /* LetterToMeUITests.swift */; };
 		7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A92C2B9217B187700A26298 /* CustomTabBarController.swift */; };
 		ABBDB214FA9915596180AD81 /* Pods_LetterToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6F01CEE806788D81682822 /* Pods_LetterToMe.framework */; };
+		DEA0A650217B48B800027E1A /* mailbox-1819966_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEA0A64F217B48B800027E1A /* mailbox-1819966_640.jpg */; };
+		DEA0A653217B4A3A00027E1A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA0A652217B4A3A00027E1A /* launch.png */; };
+		DEA0A659217B5A2D00027E1A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA0A658217B5A2D00027E1A /* CalendarViewController.swift */; };
+		DEA0A65D217B5A6100027E1A /* CalendarView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA0A65C217B5A6100027E1A /* CalendarView.storyboard */; };
+		DEA0A65F217B5D6C00027E1A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA0A65E217B5D6C00027E1A /* CustomCell.swift */; };
+		DEA0A668217B8FE500027E1A /* CalendarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA0A666217B8FE500027E1A /* CalendarPickerViewController.swift */; };
+		DEA0A669217B8FE500027E1A /* CalendarPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA0A667217B8FE500027E1A /* CalendarPickerViewController.xib */; };
+		DEA0A66C217B901B00027E1A /* CalendarPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA0A66A217B901B00027E1A /* CalendarPickerCollectionViewCell.swift */; };
+		DEA0A66D217B901B00027E1A /* CalendarPickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA0A66B217B901B00027E1A /* CalendarPickerCollectionViewCell.xib */; };
+		DEA0A671217BA5B600027E1A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA0A66F217BA5B600027E1A /* HomeViewController.swift */; };
+		DEA0A672217BA5B600027E1A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA0A670217BA5B600027E1A /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +71,17 @@
 		9302FFBB16872BAFAD0BCC96 /* Pods_LetterToMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetterToMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A319BC6DD0432A4DD7D3FE95 /* Pods-LetterToMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeUITests/Pods-LetterToMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBC3012431C2DEC7064CC88A /* Pods-LetterToMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeTests/Pods-LetterToMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEA0A64F217B48B800027E1A /* mailbox-1819966_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mailbox-1819966_640.jpg"; sourceTree = "<group>"; };
+		DEA0A652217B4A3A00027E1A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		DEA0A658217B5A2D00027E1A /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		DEA0A65C217B5A6100027E1A /* CalendarView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarView.storyboard; sourceTree = "<group>"; };
+		DEA0A65E217B5D6C00027E1A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		DEA0A666217B8FE500027E1A /* CalendarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerViewController.swift; sourceTree = "<group>"; };
+		DEA0A667217B8FE500027E1A /* CalendarPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarPickerViewController.xib; sourceTree = "<group>"; };
+		DEA0A66A217B901B00027E1A /* CalendarPickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEA0A66B217B901B00027E1A /* CalendarPickerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarPickerCollectionViewCell.xib; sourceTree = "<group>"; };
+		DEA0A66F217BA5B600027E1A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DEA0A670217BA5B600027E1A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		E7599DDD4CA2BA57B5D5D688 /* Pods-LetterToMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeUITests/Pods-LetterToMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +151,7 @@
 		7A18D6E7217AF95B00BA3D22 /* LetterToMe */ = {
 			isa = PBXGroup;
 			children = (
+				DEA0A660217B8F6300027E1A /* Classes */,
 				7A18D6E8217AF95B00BA3D22 /* AppDelegate.swift */,
 				7A18D6EA217AF95B00BA3D22 /* ViewController.swift */,
 				7A18D6EC217AF95B00BA3D22 /* Main.storyboard */,
@@ -136,6 +159,10 @@
 				7A18D6F1217AF95D00BA3D22 /* LaunchScreen.storyboard */,
 				7A18D6F4217AF95D00BA3D22 /* Info.plist */,
 				7A92C2B9217B187700A26298 /* CustomTabBarController.swift */,
+				DEA0A651217B48BE00027E1A /* Images */,
+				DEA0A658217B5A2D00027E1A /* CalendarViewController.swift */,
+				DEA0A65C217B5A6100027E1A /* CalendarView.storyboard */,
+				DEA0A65E217B5D6C00027E1A /* CustomCell.swift */,
 			);
 			path = LetterToMe;
 			sourceTree = "<group>";
@@ -166,6 +193,60 @@
 				4A48BACFFDA9C500D0981D72 /* Pods_LetterToMeUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEA0A651217B48BE00027E1A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DEA0A652217B4A3A00027E1A /* launch.png */,
+				DEA0A64F217B48B800027E1A /* mailbox-1819966_640.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DEA0A660217B8F6300027E1A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DEA0A661217B8F6F00027E1A /* Module */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DEA0A661217B8F6F00027E1A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				DEA0A66E217BA58D00027E1A /* Home */,
+				DEA0A662217B8F7400027E1A /* CalendarPicker */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		DEA0A662217B8F7400027E1A /* CalendarPicker */ = {
+			isa = PBXGroup;
+			children = (
+				DEA0A666217B8FE500027E1A /* CalendarPickerViewController.swift */,
+				DEA0A667217B8FE500027E1A /* CalendarPickerViewController.xib */,
+				DEA0A663217B8F8500027E1A /* Cells */,
+			);
+			path = CalendarPicker;
+			sourceTree = "<group>";
+		};
+		DEA0A663217B8F8500027E1A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEA0A66A217B901B00027E1A /* CalendarPickerCollectionViewCell.swift */,
+				DEA0A66B217B901B00027E1A /* CalendarPickerCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEA0A66E217BA58D00027E1A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DEA0A66F217BA5B600027E1A /* HomeViewController.swift */,
+				DEA0A670217BA5B600027E1A /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +357,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA0A650217B48B800027E1A /* mailbox-1819966_640.jpg in Resources */,
 				7A18D6F3217AF95D00BA3D22 /* LaunchScreen.storyboard in Resources */,
 				7A18D6F0217AF95D00BA3D22 /* Assets.xcassets in Resources */,
 				7A18D6EE217AF95B00BA3D22 /* Main.storyboard in Resources */,
+				DEA0A66D217B901B00027E1A /* CalendarPickerCollectionViewCell.xib in Resources */,
+				DEA0A653217B4A3A00027E1A /* launch.png in Resources */,
+				DEA0A669217B8FE500027E1A /* CalendarPickerViewController.xib in Resources */,
+				DEA0A65D217B5A6100027E1A /* CalendarView.storyboard in Resources */,
+				DEA0A672217BA5B600027E1A /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,12 +396,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LetterToMe/Pods-LetterToMe-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -394,8 +483,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA0A659217B5A2D00027E1A /* CalendarViewController.swift in Sources */,
 				7A18D6EB217AF95B00BA3D22 /* ViewController.swift in Sources */,
+				DEA0A65F217B5D6C00027E1A /* CustomCell.swift in Sources */,
+				DEA0A671217BA5B600027E1A /* HomeViewController.swift in Sources */,
+				DEA0A66C217B901B00027E1A /* CalendarPickerCollectionViewCell.swift in Sources */,
 				7A18D6E9217AF95B00BA3D22 /* AppDelegate.swift in Sources */,
+				DEA0A668217B8FE500027E1A /* CalendarPickerViewController.swift in Sources */,
 				7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

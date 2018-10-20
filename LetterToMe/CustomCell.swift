@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import JTAppleCalendar
 
 class CustomCell: JTAppleCell {
+    @IBOutlet var datalabel: UILabel!
     
 }

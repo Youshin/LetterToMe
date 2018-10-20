@@ -15,20 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-       
-       
-        
-        window?.rootViewController = CustomTabBarController()
-        
-        UINavigationBar.appearance().barTintColor = UIColor(red: 101/255, green: 210/255, blue: 110/255, alpha: 1)
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-        
-        application.statusBarStyle = .lightContent
-        
-        
-        
+        window?.rootViewController = HomeViewController()
+    
         // Override point for customization after application launch.
         return true
     }
