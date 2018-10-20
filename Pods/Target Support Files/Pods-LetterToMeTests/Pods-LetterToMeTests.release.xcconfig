@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/JTAppleCalendar"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JTAppleCalendar/JTAppleCalendar.framework/Headers"
-=======
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/StitchCore" "${PODS_CONFIGURATION_BUILD_DIR}/StitchCoreHTTPService" "${PODS_CONFIGURATION_BUILD_DIR}/StitchCoreRemoteMongoDBService" "${PODS_CONFIGURATION_BUILD_DIR}/StitchCoreSDK" "${PODS_CONFIGURATION_BUILD_DIR}/StitchHTTPService" "${PODS_CONFIGURATION_BUILD_DIR}/StitchRemoteMongoDBService" "${PODS_ROOT}/StitchCoreSDK/Frameworks/ios"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/StitchCore/StitchCore.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/StitchCoreHTTPService/StitchCoreHTTPService.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/StitchCoreSDK/StitchCoreSDK.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/StitchHTTPService/StitchHTTPService.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/StitchRemoteMongoDBService/StitchRemoteMongoDBService.framework/Headers"
 OTHER_LDFLAGS = $(inherited) -framework "MongoSwift" -framework "libbson" -framework "libmongoc"
->>>>>>> bbfa2683f4d2d3f24825ec0923ce6050a7d3be69
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

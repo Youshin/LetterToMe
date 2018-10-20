@@ -17,8 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-<<<<<<< HEAD
-=======
         
         // in `application(_:didFinishLaunchWithOptions)`
         do {
@@ -33,11 +31,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // class for more details.
         }
         
->>>>>>> bbfa2683f4d2d3f24825ec0923ce6050a7d3be69
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = HomeViewController()
-    
+       
+       
+        
+        window?.rootViewController = CustomTabBarController()
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 101/255, green: 210/255, blue: 110/255, alpha: 1)
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        
+        application.statusBarStyle = .lightContent
+        
+        
+        
         // Override point for customization after application launch.
         return true
     }

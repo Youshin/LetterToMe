@@ -19,9 +19,9 @@ class CustomTabBarController: UITabBarController {
 //        navigationController.title = "Home"
         navigationController.tabBarItem.image = UIImage(named: "1")
         
-        let secondController = CalendarPickerViewController()
+        let secondController = UIViewController()
         let secondNavigationController = UINavigationController(rootViewController: secondController)
- //       secondNavigationController.title = "Second"
+//        secondNavigationController.title = "Second"
         secondNavigationController.tabBarItem.image = UIImage(named: "2")
         
         let thirdController = UIViewController()

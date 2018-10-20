@@ -143,14 +143,6 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-<<<<<<< HEAD
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework"
-=======
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCore/StitchCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCoreHTTPService/StitchCoreHTTPService.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.framework"
@@ -171,7 +163,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/StitchCoreSDK/StitchCoreSDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchHTTPService/StitchHTTPService.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/StitchRemoteMongoDBService/StitchRemoteMongoDBService.framework"
->>>>>>> bbfa2683f4d2d3f24825ec0923ce6050a7d3be69
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
