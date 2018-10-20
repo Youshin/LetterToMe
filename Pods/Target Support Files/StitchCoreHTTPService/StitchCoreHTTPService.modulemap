@@ -1,0 +1,6 @@
+framework module StitchCoreHTTPService {
+  umbrella header "StitchCoreHTTPService-umbrella.h"
+
+  export *
+  module * { export * }
+}
