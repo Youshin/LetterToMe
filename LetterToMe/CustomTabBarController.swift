@@ -16,16 +16,30 @@ class CustomTabBarController: UITabBarController {
         let homeController = ViewController(collectionViewLayout: UICollectionViewLayout())
         let navigationController = UINavigationController(rootViewController: homeController)
         
-        navigationController.title = "Home"
-       // navigationController.tabBarItem.image = UIImage(named: <#T##String#>)
+//        navigationController.title = "Home"
+        navigationController.tabBarItem.image = UIImage(named: "1")
         
         let secondController = UIViewController()
         let secondNavigationController = UINavigationController(rootViewController: secondController)
-        secondNavigationController.title = "Second"
-        // secondNavigationController.tabBarItem.image = UIImage(named: <#T##String#>)
-
+//        secondNavigationController.title = "Second"
+        secondNavigationController.tabBarItem.image = UIImage(named: "2")
         
-        viewControllers = [navigationController, secondNavigationController]
+        let thirdController = UIViewController()
+        let thirdNavigationController = UINavigationController(rootViewController: thirdController)
+//        thirdNavigationController.title = "third"
+        thirdNavigationController.tabBarItem.image = UIImage(named: "3")
+        
+        let fourthController = UIViewController()
+        let fourthNavigationController = UINavigationController(rootViewController: fourthController)
+//        fourthNavigationController.title = "fourth"
+        fourthNavigationController.tabBarItem.image = UIImage(named: "4")
+        
+        let fifthController = UIViewController()
+        let fifthNavigationController = UINavigationController(rootViewController: fifthController)
+//        fifthNavigationController.title = "fifth"
+        fifthNavigationController.tabBarItem.image = UIImage(named: "5")
+        
+        viewControllers = [navigationController, secondNavigationController, thirdNavigationController, fourthNavigationController, fifthNavigationController]
         
         
         
