@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StitchCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+<<<<<<< HEAD
+=======
+        
+        // in `application(_:didFinishLaunchWithOptions)`
+        do {
+            _ = try Stitch.initializeDefaultAppClient(
+                withClientAppID: "my_dear_diary-xqjvv"
+            )
+        } catch {
+            print("Failed to initialize MongoDB Stitch iOS SDK: \(error)")
+            // note: This initialization will only fail if an incomplete configuration is
+            // passed to a client initialization method, or if a client for a particular
+            // app ID is initialized multiple times. See the documentation of the "Stitch"
+            // class for more details.
+        }
+        
+>>>>>>> bbfa2683f4d2d3f24825ec0923ce6050a7d3be69
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = HomeViewController()
