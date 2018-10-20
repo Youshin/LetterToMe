@@ -17,6 +17,7 @@
 		7A18D6FE217AF95D00BA3D22 /* LetterToMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18D6FD217AF95D00BA3D22 /* LetterToMeTests.swift */; };
 		7A18D709217AF95D00BA3D22 /* LetterToMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18D708217AF95D00BA3D22 /* LetterToMeUITests.swift */; };
 		7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A92C2B9217B187700A26298 /* CustomTabBarController.swift */; };
+		849FBFE1217B2CB2007CDD62 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FBFE0217B2CB2007CDD62 /* FirstPageView.swift */; };
 		ABBDB214FA9915596180AD81 /* Pods_LetterToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6F01CEE806788D81682822 /* Pods_LetterToMe.framework */; };
 		DEA0A650217B48B800027E1A /* mailbox-1819966_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEA0A64F217B48B800027E1A /* mailbox-1819966_640.jpg */; };
 		DEA0A653217B4A3A00027E1A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA0A652217B4A3A00027E1A /* launch.png */; };
@@ -67,6 +68,7 @@
 		7A18D708217AF95D00BA3D22 /* LetterToMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterToMeUITests.swift; sourceTree = "<group>"; };
 		7A18D70A217AF95E00BA3D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A92C2B9217B187700A26298 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		849FBFE0217B2CB2007CDD62 /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
 		866CF5EBB2C09F38842FCC4F /* Pods-LetterToMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMe/Pods-LetterToMe.release.xcconfig"; sourceTree = "<group>"; };
 		9302FFBB16872BAFAD0BCC96 /* Pods_LetterToMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetterToMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A319BC6DD0432A4DD7D3FE95 /* Pods-LetterToMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeUITests/Pods-LetterToMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,10 +161,14 @@
 				7A18D6F1217AF95D00BA3D22 /* LaunchScreen.storyboard */,
 				7A18D6F4217AF95D00BA3D22 /* Info.plist */,
 				7A92C2B9217B187700A26298 /* CustomTabBarController.swift */,
+<<<<<<< HEAD
 				DEA0A651217B48BE00027E1A /* Images */,
 				DEA0A658217B5A2D00027E1A /* CalendarViewController.swift */,
 				DEA0A65C217B5A6100027E1A /* CalendarView.storyboard */,
 				DEA0A65E217B5D6C00027E1A /* CustomCell.swift */,
+=======
+				849FBFE0217B2CB2007CDD62 /* FirstPageView.swift */,
+>>>>>>> 3f9bc02fa3ba06c4219cdbe981fc95d9b74783fc
 			);
 			path = LetterToMe;
 			sourceTree = "<group>";
@@ -513,7 +519,11 @@
 				DEA0A671217BA5B600027E1A /* HomeViewController.swift in Sources */,
 				DEA0A66C217B901B00027E1A /* CalendarPickerCollectionViewCell.swift in Sources */,
 				7A18D6E9217AF95B00BA3D22 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				DEA0A668217B8FE500027E1A /* CalendarPickerViewController.swift in Sources */,
+=======
+				849FBFE1217B2CB2007CDD62 /* FirstPageView.swift in Sources */,
+>>>>>>> 3f9bc02fa3ba06c4219cdbe981fc95d9b74783fc
 				7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
