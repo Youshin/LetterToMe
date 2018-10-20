@@ -1,16 +1,49 @@
 PODS:
-  - Alamofire (4.7.3)
+  - StitchCore (4.0.5):
+    - StitchCoreSDK (~> 4.0.5)
+  - StitchCoreHTTPService (4.0.5):
+    - StitchCoreSDK (~> 4.0.5)
+  - StitchCoreRemoteMongoDBService (4.0.5):
+    - StitchCoreSDK (~> 4.0.5)
+  - StitchCoreSDK (4.0.6)
+  - StitchHTTPService (4.0.5):
+    - StitchCore (~> 4.0.5)
+    - StitchCoreHTTPService (~> 4.0.5)
+  - StitchRemoteMongoDBService (4.0.5):
+    - StitchCore (~> 4.0.5)
+    - StitchCoreRemoteMongoDBService (~> 4.0.5)
+  - StitchSDK (4.0.5):
+    - StitchSDK/StitchSDK (= 4.0.5)
+  - StitchSDK/StitchHTTPService (4.0.5):
+    - StitchHTTPService (~> 4.0.5)
+  - StitchSDK/StitchRemoteMongoDBService (4.0.5):
+    - StitchRemoteMongoDBService (~> 4.0.5)
+  - StitchSDK/StitchSDK (4.0.5):
+    - StitchSDK/StitchRemoteMongoDBService
 
 DEPENDENCIES:
-  - Alamofire
+  - StitchSDK (~> 4.0.5)
+  - StitchSDK/StitchHTTPService (~> 4.0.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
+    - StitchCore
+    - StitchCoreHTTPService
+    - StitchCoreRemoteMongoDBService
+    - StitchCoreSDK
+    - StitchHTTPService
+    - StitchRemoteMongoDBService
+    - StitchSDK
 
 SPEC CHECKSUMS:
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  StitchCore: 93969ed38c0777c9d12f3497a0fc37776e618ad5
+  StitchCoreHTTPService: e19811c712f1a151032f7eaadee018e1984622d7
+  StitchCoreRemoteMongoDBService: ea279f1595bd4bd08fd7b0154a2265cf160adbc3
+  StitchCoreSDK: 6a045e7ef542377efc402177535619e7d5a6b164
+  StitchHTTPService: df04b797739d843efb0fea8795781345c1d0de1c
+  StitchRemoteMongoDBService: e647002187b90bafcf83b7d2d5600016f6712417
+  StitchSDK: 066c767799237d3ddf49ba702f8fdc4199e7e68e
 
-PODFILE CHECKSUM: baa5c0c7b3cf5fde7ab7d0958f955ca9b5dec805
+PODFILE CHECKSUM: 7c6abccc3ec0f81713bac3ff7da5f05d74a06ec9
 
 COCOAPODS: 1.5.3
