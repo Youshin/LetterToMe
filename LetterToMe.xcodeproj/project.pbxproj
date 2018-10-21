@@ -30,6 +30,8 @@
 		DE02E057217C4FFC0015C2A8 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E056217C4FFC0015C2A8 /* LetterViewController.swift */; };
 		DE02E059217C52C70015C2A8 /* letter.png in Resources */ = {isa = PBXBuildFile; fileRef = DE02E058217C52C70015C2A8 /* letter.png */; };
 		DE02E05B217C534E0015C2A8 /* stationery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE02E05A217C534E0015C2A8 /* stationery.jpg */; };
+		DE02E05D217C67BA0015C2A8 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E05C217C67BA0015C2A8 /* InboxViewController.swift */; };
+		DE02E05F217C6C1B0015C2A8 /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E05E217C6C1B0015C2A8 /* InboxTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		DE02E056217C4FFC0015C2A8 /* LetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterViewController.swift; sourceTree = "<group>"; };
 		DE02E058217C52C70015C2A8 /* letter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter.png; sourceTree = "<group>"; };
 		DE02E05A217C534E0015C2A8 /* stationery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stationery.jpg; sourceTree = "<group>"; };
+		DE02E05C217C67BA0015C2A8 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		DE02E05E217C6C1B0015C2A8 /* InboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
 		E7599DDD4CA2BA57B5D5D688 /* Pods-LetterToMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeUITests/Pods-LetterToMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +172,8 @@
 				DE02E04F217C48F80015C2A8 /* Image */,
 				7AA6F70C217C3B5D003D3934 /* MainViewController.swift */,
 				DE02E056217C4FFC0015C2A8 /* LetterViewController.swift */,
+				DE02E05C217C67BA0015C2A8 /* InboxViewController.swift */,
+				DE02E05E217C6C1B0015C2A8 /* InboxTableViewCell.swift */,
 			);
 			path = LetterToMe;
 			sourceTree = "<group>";
@@ -510,9 +516,11 @@
 				7A18D6E9217AF95B00BA3D22 /* AppDelegate.swift in Sources */,
 				7A741432217C135E000FC302 /* accountViewController.swift in Sources */,
 				DE02E04B217C43BD0015C2A8 /* DiaryViewController.swift in Sources */,
+				DE02E05D217C67BA0015C2A8 /* InboxViewController.swift in Sources */,
 				DE02E057217C4FFC0015C2A8 /* LetterViewController.swift in Sources */,
 				7AA6F70D217C3B5D003D3934 /* MainViewController.swift in Sources */,
 				8450E299217C241400F742EB /* SignInViewController.swift in Sources */,
+				DE02E05F217C6C1B0015C2A8 /* InboxTableViewCell.swift in Sources */,
 				7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

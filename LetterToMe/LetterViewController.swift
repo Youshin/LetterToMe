@@ -8,8 +8,12 @@
 
 import UIKit
 import SVProgressHUD
+import StitchCore
 
 class LetterViewController: UIViewController {
+    
+    var receiveDate = 0
+    let client = Stitch.defaultAppClient!
 
     @IBOutlet weak var currentDate: UILabel!
     @IBOutlet weak var letterView: UITextView!
@@ -33,7 +37,12 @@ class LetterViewController: UIViewController {
             SVProgressHUD.dismiss(withDelay: 5)
         }
         else {
-            print("DB")
+            let number = Int.random(in: 3 ... 5)
+            receiveDate = number * 7
+            client.callFunction(withName: "getLetter", withArgs: [receiveDate, currentDate.text, letterView.text]){ result in
+                
+            }
+//            print("DB")
         }
     }
     
