@@ -123,6 +123,7 @@
                         <segue destination="J7k-bh-mI9" kind="relationship" relationship="viewControllers" id="6k5-X1-Mxq"/>
                         <segue destination="mtO-ta-z2n" kind="relationship" relationship="viewControllers" id="Auv-lw-11B"/>
                         <segue destination="eNx-M5-yNn" kind="relationship" relationship="viewControllers" id="t0f-lw-KvL"/>
+                        <segue destination="yan-xb-1NM" kind="relationship" relationship="viewControllers" id="g6r-9l-RbT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kkw-9q-bM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -164,7 +165,6 @@
         <!--Sign In View Controller-->
         <scene sceneID="UjM-8l-1YR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PDM-pQ-IcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="wpG-ed-dAM" customClass="SignInViewController" customModule="LetterToMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6pH-C7-NSR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -223,8 +223,128 @@
                         <outlet property="signInView" destination="Ai5-8G-pU6" id="y9W-dz-Nho"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDM-pQ-IcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-317" y="-429"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Nz6-4k-ru7">
+            <objects>
+                <viewController id="yan-xb-1NM" customClass="DiaryViewController" customModule="LetterToMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uMb-0a-VQI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAQ-rW-GQk">
+                                <rect key="frame" x="231" y="205" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="angry"/>
+                                <connections>
+                                    <action selector="angryButton:" destination="yan-xb-1NM" eventType="touchUpInside" id="gl8-lm-mRV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc5-dR-2cP">
+                                <rect key="frame" x="38" y="206" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="happy"/>
+                                <connections>
+                                    <action selector="happyButton:" destination="yan-xb-1NM" eventType="touchUpInside" id="Syc-vW-ZJF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZc-od-flz">
+                                <rect key="frame" x="102" y="206" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="love"/>
+                                <connections>
+                                    <action selector="loveButton:" destination="yan-xb-1NM" eventType="touchUpInside" id="8OG-QV-ek2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yM-6J-Dew">
+                                <rect key="frame" x="167" y="206" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cry"/>
+                                <connections>
+                                    <action selector="sadButton:" destination="yan-xb-1NM" eventType="touchUpInside" id="7r2-A6-Z76"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddc-sq-obZ">
+                                <rect key="frame" x="295" y="205" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="sick"/>
+                                <connections>
+                                    <action selector="sickButton:" destination="yan-xb-1NM" eventType="touchUpInside" id="5bb-If-hvT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose your mood" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Atz-NX-KEZ">
+                                <rect key="frame" x="38" y="172" width="161" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="How's your day?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vnu-0A-saZ">
+                                <rect key="frame" x="38" y="280" width="161" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Today is ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FkP-El-xXa">
+                                <rect key="frame" x="38" y="74" width="161" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHJ-Mg-atN">
+                                <rect key="frame" x="102" y="102" width="233" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bs-s1-Orq">
+                                <rect key="frame" x="0.0" y="634" width="414" height="53"/>
+                                <color key="backgroundColor" red="0.39236328009999999" green="0.81769794230000004" blue="0.42738187309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Send My Day">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="yan-xb-1NM" eventType="touchUpInside" id="ycN-eM-Knu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GMr-9U-Lj3">
+                                <rect key="frame" x="38" y="311" width="298" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87246667999242222" green="0.9689861489701147" blue="0.81458187241409652" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aHX-Na-p3Y" firstAttribute="bottom" secondItem="8bs-s1-Orq" secondAttribute="bottom" id="4VE-L8-dea"/>
+                            <constraint firstItem="aHX-Na-p3Y" firstAttribute="trailing" secondItem="8bs-s1-Orq" secondAttribute="trailing" id="Qze-y0-IND"/>
+                            <constraint firstItem="8bs-s1-Orq" firstAttribute="leading" secondItem="aHX-Na-p3Y" secondAttribute="leading" id="tT5-9S-iKv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aHX-Na-p3Y"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="32b-Ug-azg"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="oHJ-Mg-atN" id="Pfx-t2-GTz"/>
+                        <outlet property="dayText" destination="GMr-9U-Lj3" id="7QQ-nA-fUl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7mE-gM-URG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2350.7246376811595" y="-382.33695652173918"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="angry" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="cry" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="happy" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="love" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="sick" width="409.60000610351562" height="409.60000610351562"/>
+    </resources>
 </document>
