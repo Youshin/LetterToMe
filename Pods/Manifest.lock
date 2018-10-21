@@ -109,6 +109,7 @@ PODS:
     - StitchRemoteMongoDBService (~> 4.0.5)
   - StitchSDK/StitchSDK (4.0.5):
     - StitchSDK/StitchRemoteMongoDBService
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - FacebookLogin
@@ -116,6 +117,7 @@ DEPENDENCIES:
   - GoogleSignIn
   - StitchSDK (~> 4.0.5)
   - StitchSDK/StitchHTTPService (~> 4.0.5)
+  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -142,6 +144,7 @@ SPEC REPOS:
     - StitchHTTPService
     - StitchRemoteMongoDBService
     - StitchSDK
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
@@ -167,7 +170,8 @@ SPEC CHECKSUMS:
   StitchHTTPService: df04b797739d843efb0fea8795781345c1d0de1c
   StitchRemoteMongoDBService: e647002187b90bafcf83b7d2d5600016f6712417
   StitchSDK: 066c767799237d3ddf49ba702f8fdc4199e7e68e
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: dc0064ea8145db715d899502f938797dca3a3b4c
+PODFILE CHECKSUM: 378939903f124c76292a8f155e5a076824e25c33
 
 COCOAPODS: 1.5.3

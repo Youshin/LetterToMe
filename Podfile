@@ -9,6 +9,7 @@ target 'LetterToMe' do
     pod 'FacebookLogin'
     pod 'Firebase'
     pod 'GoogleSignIn'
+    pod 'SVProgressHUD'
     # optional: for using the AWS service
 #   pod 'StitchSDK/StitchAWSService', '~> 4.0.5'
     # optional: for using the Firebase Cloud Messaging service

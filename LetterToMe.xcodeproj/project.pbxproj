@@ -22,6 +22,8 @@
 		8450E297217C226E00F742EB /* SignInScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450E296217C226E00F742EB /* SignInScreen.storyboard */; };
 		8450E299217C241400F742EB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E298217C241400F742EB /* SignInViewController.swift */; };
 		ABBDB214FA9915596180AD81 /* Pods_LetterToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6F01CEE806788D81682822 /* Pods_LetterToMe.framework */; };
+		DE02E04B217C43BD0015C2A8 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E049217C43BC0015C2A8 /* DiaryViewController.swift */; };
+		DE02E04C217C43BD0015C2A8 /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE02E04A217C43BD0015C2A8 /* Diary.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		9302FFBB16872BAFAD0BCC96 /* Pods_LetterToMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetterToMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A319BC6DD0432A4DD7D3FE95 /* Pods-LetterToMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeUITests/Pods-LetterToMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBC3012431C2DEC7064CC88A /* Pods-LetterToMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeTests/Pods-LetterToMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE02E049217C43BC0015C2A8 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		DE02E04A217C43BD0015C2A8 /* Diary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
 		E7599DDD4CA2BA57B5D5D688 /* Pods-LetterToMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeUITests/Pods-LetterToMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +141,8 @@
 		7A18D6E7217AF95B00BA3D22 /* LetterToMe */ = {
 			isa = PBXGroup;
 			children = (
+				DE02E04A217C43BD0015C2A8 /* Diary.storyboard */,
+				DE02E049217C43BC0015C2A8 /* DiaryViewController.swift */,
 				7A18D6E8217AF95B00BA3D22 /* AppDelegate.swift */,
 				7A18D6EA217AF95B00BA3D22 /* ViewController.swift */,
 				7A18D6EC217AF95B00BA3D22 /* Main.storyboard */,
@@ -293,6 +299,7 @@
 				7A18D6F0217AF95D00BA3D22 /* Assets.xcassets in Resources */,
 				8450E297217C226E00F742EB /* SignInScreen.storyboard in Resources */,
 				7A18D6EE217AF95B00BA3D22 /* Main.storyboard in Resources */,
+				DE02E04C217C43BD0015C2A8 /* Diary.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +360,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/StitchCore/StitchCore.framework",
 				"${BUILT_PRODUCTS_DIR}/StitchCoreHTTPService/StitchCoreHTTPService.framework",
 				"${BUILT_PRODUCTS_DIR}/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.framework",
@@ -377,6 +385,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreHTTPService.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreRemoteMongoDBService.framework",
@@ -469,6 +478,7 @@
 				7A18D6EB217AF95B00BA3D22 /* ViewController.swift in Sources */,
 				7A18D6E9217AF95B00BA3D22 /* AppDelegate.swift in Sources */,
 				7A741432217C135E000FC302 /* accountViewController.swift in Sources */,
+				DE02E04B217C43BD0015C2A8 /* DiaryViewController.swift in Sources */,
 				7AA6F70D217C3B5D003D3934 /* MainViewController.swift in Sources */,
 				8450E299217C241400F742EB /* SignInViewController.swift in Sources */,
 				7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */,
