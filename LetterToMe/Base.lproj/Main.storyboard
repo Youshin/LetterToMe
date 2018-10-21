@@ -101,14 +101,116 @@
                     <view key="view" contentMode="scaleToFill" id="Faa-ob-Fw8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stf-Ve-Hck">
+                                <rect key="frame" x="266" y="81" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Write a New Letter"/>
+                                <connections>
+                                    <segue destination="8Sq-B0-NuK" kind="show" id="0Bd-ck-ZRJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stationery.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1jd-fC-VK6">
+                                <rect key="frame" x="48" y="137" width="327" height="533"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="letter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSW-7m-0aC">
+                                <rect key="frame" x="94" y="265" width="235" height="357"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZM-vU-Tph">
+                                <rect key="frame" x="281" y="203" width="41" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K5o-s7-3ci"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="j0I-y0-Jil"/>
+                    <navigationItem key="navigationItem" id="opF-MF-ZQV"/>
+                    <connections>
+                        <outlet property="date" destination="IZM-vU-Tph" id="m0a-xf-2dq"/>
+                        <outlet property="letterView" destination="gSW-7m-0aC" id="9Fe-Rx-Hy4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arG-tH-4rD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="-382"/>
+            <point key="canvasLocation" x="482.60869565217394" y="-382.33695652173918"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XEj-92-pGp">
+            <objects>
+                <navigationController id="hAm-gH-ydi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PkV-AZ-7S7">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J7k-bh-mI9" kind="relationship" relationship="rootViewController" id="9p2-mv-ZA3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3oY-lw-V9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-317" y="250"/>
+        </scene>
+        <!--Letter View Controller-->
+        <scene sceneID="Zf2-Z0-yK0">
+            <objects>
+                <viewController id="8Sq-B0-NuK" customClass="LetterViewController" customModule="LetterToMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yea-9D-Y92">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="airmail.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rx6-eQ-es2">
+                                <rect key="frame" x="-7" y="170" width="421" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Im-X0-Mkh">
+                                <rect key="frame" x="67" y="211" width="273" height="378"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-Ee-fXM">
+                                <rect key="frame" x="44" y="75" width="326" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">This letter will be delivered to you at randomly. Feel free to write your thoughts. moods, or something that you want to tell you in the future.</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsK-Du-MkC">
+                                <rect key="frame" x="331" y="653" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="send"/>
+                                <connections>
+                                    <action selector="sentButton:" destination="8Sq-B0-NuK" eventType="touchUpInside" id="HDr-6z-Ivi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhq-4K-Lf3">
+                                <rect key="frame" x="181" y="597" width="148" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="b2h-uD-tvJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentDate" destination="uhq-4K-Lf3" id="GcY-1T-y5I"/>
+                        <outlet property="letterView" destination="0Im-X0-Mkh" id="7m9-4m-bWR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tx4-VF-6ke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482.60869565217394" y="306.52173913043481"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6WU-NA-C8F">
@@ -341,10 +443,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="airmail.jpg" width="853" height="1280"/>
         <image name="angry" width="409.60000610351562" height="409.60000610351562"/>
         <image name="cry" width="409.60000610351562" height="409.60000610351562"/>
         <image name="happy" width="409.60000610351562" height="409.60000610351562"/>
         <image name="love" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="send" width="1280" height="1280"/>
         <image name="sick" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="stationery.jpg" width="1316" height="1920"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="9p2-mv-ZA3"/>
+    </inferredMetricsTieBreakers>
 </document>
