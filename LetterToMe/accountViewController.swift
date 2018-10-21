@@ -12,6 +12,10 @@ class accountViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func signUp(_ sender: Any) {
+        performSegue(withIdentifier: "seguetosignup", sender: self)
+    }
+    
     @IBAction func onTouchSignin(_ sender: Any) {
         signin()
     }

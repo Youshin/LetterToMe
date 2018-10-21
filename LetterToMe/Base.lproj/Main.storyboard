@@ -59,7 +59,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
-                                    <segue destination="wpG-ed-dAM" kind="show" id="Kdo-uT-q6g"/>
+                                    <action selector="signUp:" destination="kxq-0x-BmJ" eventType="touchUpInside" id="AUo-yv-1Z4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,11 +72,12 @@
                         <outlet property="password" destination="jpQ-Tk-zSK" id="HFR-pQ-auJ"/>
                         <outlet property="signInButton" destination="lJf-jK-GWg" id="wV4-nq-vyh"/>
                         <segue destination="0wQ-d9-hPo" kind="presentation" identifier="loginSegue" id="P1b-XM-mQe"/>
+                        <segue destination="wpG-ed-dAM" kind="show" identifier="seguetosignup" id="OKd-NF-aqF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJP-QT-OJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-317" y="-1133"/>
+            <point key="canvasLocation" x="-317.39130434782612" y="-1133.1521739130435"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="lUc-Ma-TNm">
@@ -164,7 +165,6 @@
         <!--Sign In View Controller-->
         <scene sceneID="UjM-8l-1YR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PDM-pQ-IcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="wpG-ed-dAM" customClass="SignInViewController" customModule="LetterToMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6pH-C7-NSR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -187,7 +187,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ai5-8G-pU6">
-                                <rect key="frame" x="84" y="715" width="269" height="149"/>
+                                <rect key="frame" x="73" y="800" width="269" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4kw-wi-Klt">
@@ -196,6 +196,10 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="email:" destination="wpG-ed-dAM" eventType="editingDidEnd" id="FTF-Kg-qJS"/>
+                                            <action selector="wq:" destination="wpG-ed-dAM" eventType="editingDidEnd" id="3db-DN-Vm0"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiH-uy-CZP">
                                         <rect key="frame" x="104" y="116" width="57" height="30"/>
@@ -211,6 +215,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="password:" destination="wpG-ed-dAM" eventType="editingDidEnd" id="BgV-6R-oog"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -220,9 +227,13 @@
                         <viewLayoutGuide key="safeArea" id="h1X-95-Cp4"/>
                     </view>
                     <connections>
+                        <outlet property="asdas" destination="4kw-wi-Klt" id="pw7-vk-AEd"/>
+                        <outlet property="email" destination="4kw-wi-Klt" id="IfD-Rq-OHd"/>
+                        <outlet property="password" destination="sw3-jD-xXS" id="lbI-s2-yMI"/>
                         <outlet property="signInView" destination="Ai5-8G-pU6" id="y9W-dz-Nho"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDM-pQ-IcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-317" y="-429"/>
         </scene>

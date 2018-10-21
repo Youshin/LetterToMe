@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StitchCore
 
 class SignInViewController: UIViewController {
 
@@ -18,6 +19,8 @@ class SignInViewController: UIViewController {
     
     
     @IBOutlet weak var signInView: UIView!
+    @IBOutlet weak var emailin: UITextField!
+    @IBOutlet weak var passwordin: UITextField!
     
     @IBAction func signUpPressed(_ sender: Any) {
         print("Hello Button")
@@ -30,17 +33,25 @@ class SignInViewController: UIViewController {
     }
     
     
-    @IBAction func facebookPressed(_ sender: Any) {
-        
-    }
-    
     @IBAction func signUpDone(_ sender: Any) {
         UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseOut], animations: {
-            self.signInView.transform = CGAffineTransform(translationX: 50, y: 0)
+            self.signInView.transform = CGAffineTransform(translationX: 0, y: 0)
             self.signInView.alpha = 0.0
         }, completion: nil)
         //TODO: MAKE SURE THE USER INFO IS ENTERED INTO MONGODB STITCH
         
+//        let emailPassClient = Stitch.defaultAppClient!.auth.providerClient(
+//            fromFactory: userPasswordClientFactory
+//        )
+        
+//        emailPassClient.register(withEmail: emailin.text!, withPassword: passwordin.text!) { result in
+//            switch result {
+//            case .success:
+//                print("Registration email sent")
+//            case .failure(let error):
+//                print("Error sending registration email")
+//            }
+//        }
     }
     
     /*
