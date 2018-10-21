@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2l1-dc-8fl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1099" y="-382"/>
+            <point key="canvasLocation" x="1078" y="-382"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="zr6-2c-gGl">
@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arG-tH-4rD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="-382"/>
+            <point key="canvasLocation" x="457" y="-382"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6WU-NA-C8F">
@@ -123,11 +123,45 @@
                         <segue destination="J7k-bh-mI9" kind="relationship" relationship="viewControllers" id="6k5-X1-Mxq"/>
                         <segue destination="mtO-ta-z2n" kind="relationship" relationship="viewControllers" id="Auv-lw-11B"/>
                         <segue destination="eNx-M5-yNn" kind="relationship" relationship="viewControllers" id="t0f-lw-KvL"/>
+                        <segue destination="lC8-rx-PJ2" kind="relationship" relationship="viewControllers" id="hjl-F7-ALr"/>
+                        <segue destination="jXt-Wt-ceF" kind="relationship" relationship="viewControllers" id="eAQ-Cb-ORX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kkw-9q-bM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122" y="-1133"/>
+            <point key="canvasLocation" x="1703" y="-1133"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Jbf-4v-Em4">
+            <objects>
+                <viewController id="jXt-Wt-ceF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5pv-Lg-VNK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9fw-KU-Xvj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ffF-fc-3uf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01w-yz-ACZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2978" y="-382"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="z9c-T0-gdp">
+            <objects>
+                <viewController id="lC8-rx-PJ2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Gs-PJ-Tox">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="c5M-3D-xGJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="NXz-ox-JTd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUy-DP-ozf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2328" y="-382"/>
         </scene>
         <!--Item-->
         <scene sceneID="vzE-F1-8rU">
@@ -224,7 +258,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-317" y="-429"/>
+            <point key="canvasLocation" x="-317" y="-382"/>
         </scene>
     </scenes>
 </document>
