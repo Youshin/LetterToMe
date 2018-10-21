@@ -12,9 +12,9 @@ import StitchCore
 
 class ViewController: UICollectionViewController {
     
-    
+  
     private lazy var stitchClient = Stitch.defaultAppClient!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,26 +22,42 @@ class ViewController: UICollectionViewController {
         
         let client = Stitch.defaultAppClient!
         
-        print("logging in anonymously")
-       
-        client.auth.login(withCredential: AnonymousCredential()) { result in
+        // print("logging in anonymously")
+        
+        
+        if !client.auth.isLoggedIn {
+            print("hello")
+            
+        }
+        
+        let credential = UserPasswordCredential.init(withUsername: "youshin", withPassword: "123456")
+        
+        client.auth.login(withCredential: credential) { result in
             switch result {
-            case .success(let user):
-                print("logged in anonymous as user \(user.id)")
-                DispatchQueue.main.async {
-                    // update UI accordingly
-                }
+            case .success:
+                print("Successfully logged in")
             case .failure(let error):
-                print("Failed to log in: \(error)")
+                print("Error logging in with email/password auth: \(error)")
             }
         }
+        
+//        client.auth.login(withCredential: AnonymousCredential()) { result in
+//            switch result {
+//            case .success(let user):
+//                print("logged in anonymous as user \(user.id)")
+//                DispatchQueue.main.async {
+//                    // update UI accordingly
+//                }
+//            case .failure(let error):
+//                print("Failed to log in: \(error)")
+//            }
+//        }
         
         client.callFunction(
             withName: "Users", withArgs: [], withRequestTimeout: 5.0
         ) { (result: StitchResult<String>) in
             switch result {
             case .success(let stringResult):
-                
                 print("String result: \(stringResult)")
             case .failure(let error):
                 print("Error retrieving String: \(String(describing: error))")
@@ -54,11 +70,13 @@ class ViewController: UICollectionViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-
-
+  
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 }
 

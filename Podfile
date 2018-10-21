@@ -6,7 +6,9 @@ target 'LetterToMe' do
   use_frameworks!
 # For core functionality and the Remote MongoDB Service
     pod 'StitchSDK', '~> 4.0.5'
-
+    pod 'FacebookLogin'
+    pod 'Firebase'
+    pod 'GoogleSignIn'
     # optional: for using the AWS service
 #   pod 'StitchSDK/StitchAWSService', '~> 4.0.5'
     # optional: for using the Firebase Cloud Messaging service

@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         
         window?.rootViewController = CustomTabBarController()
-        
+        UITabBar.appearance().backgroundColor = UIColor.white
         UINavigationBar.appearance().barTintColor = UIColor(red: 101/255, green: 210/255, blue: 110/255, alpha: 1)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
