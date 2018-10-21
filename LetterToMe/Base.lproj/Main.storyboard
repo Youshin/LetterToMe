@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kxq-0x-BmJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s6S-6P-5eV">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -58,21 +58,25 @@
                                 <rect key="frame" x="245" y="290" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <segue destination="wpG-ed-dAM" kind="show" id="Kdo-uT-q6g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UbL-ru-poG"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8MY-zR-FXT"/>
                     <connections>
                         <outlet property="email" destination="YA4-JP-9Vf" id="mqk-0I-bv8"/>
                         <outlet property="password" destination="jpQ-Tk-zSK" id="HFR-pQ-auJ"/>
                         <outlet property="signInButton" destination="lJf-jK-GWg" id="wV4-nq-vyh"/>
-                        <segue destination="0wQ-d9-hPo" kind="show" identifier="loginSegue" id="P1b-XM-mQe"/>
+                        <segue destination="0wQ-d9-hPo" kind="presentation" identifier="loginSegue" id="P1b-XM-mQe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJP-QT-OJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="-1133"/>
+            <point key="canvasLocation" x="-317" y="-1133"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="lUc-Ma-TNm">
@@ -140,6 +144,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZ6-CQ-A4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1704" y="-382"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KYA-5d-ajA">
+            <objects>
+                <navigationController id="s6S-6P-5eV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mij-PN-y2O">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kxq-0x-BmJ" kind="relationship" relationship="rootViewController" id="bzg-gn-icM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QsH-jd-Ce3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1062" y="-1133"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="UjM-8l-1YR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDM-pQ-IcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="wpG-ed-dAM" customClass="SignInViewController" customModule="LetterToMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6pH-C7-NSR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKT-xK-u4G">
+                                <rect key="frame" x="104" y="476" width="207" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facebook"/>
+                                <connections>
+                                    <action selector="facebookPressed:" destination="wpG-ed-dAM" eventType="touchUpInside" id="cyQ-xs-Xzc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzT-CY-KAK">
+                                <rect key="frame" x="104" y="417" width="207" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign up with email"/>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="wpG-ed-dAM" eventType="touchUpInside" id="tFe-bG-sGM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ai5-8G-pU6">
+                                <rect key="frame" x="84" y="715" width="269" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4kw-wi-Klt">
+                                        <rect key="frame" x="27" y="39" width="214" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiH-uy-CZP">
+                                        <rect key="frame" x="104" y="116" width="57" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Sign up!"/>
+                                        <connections>
+                                            <action selector="signUpDone:" destination="wpG-ed-dAM" eventType="touchUpInside" id="8kL-4G-jzQ"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sw3-jD-xXS">
+                                        <rect key="frame" x="27" y="78" width="214" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="h1X-95-Cp4"/>
+                    </view>
+                    <connections>
+                        <outlet property="signInView" destination="Ai5-8G-pU6" id="y9W-dz-Nho"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-317" y="-429"/>
         </scene>
     </scenes>
 </document>
