@@ -8,6 +8,8 @@
 
 import UIKit
 import SVProgressHUD
+import StitchCore
+import StitchRemoteMongoDBService
 
 class DiaryViewController: UIViewController, UITextViewDelegate {
 
@@ -15,6 +17,7 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var dayText: UITextView!
     var mood = ""
+    let client = Stitch.defaultAppClient!
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         let currentText = textView.text ?? ""
@@ -29,6 +32,8 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
        
         
         super.viewDidLoad()
+        
+
         let currentDateTime = Date()
         let formatter = DateFormatter()
         
@@ -72,7 +77,24 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
             SVProgressHUD.dismiss(withDelay: 3)
         }
         else {
-            print("DB")
+            add()
+            print("today's mood: ", mood,"today's text",dayText.text)
+        }
+    }
+    private func add() {
+        let arg1 = client.auth.currentUser!.id
+        let arg2 = dateLabel.text ?? "N/A"
+        let arg3 = mood
+        let arg4 = dayText.text ?? "N/A"
+        client.callFunction(
+            withName: "add", withArgs: [arg1,arg2,arg3,arg4], withRequestTimeout: 5.0
+        ) { (result: StitchResult<String>) in
+            switch result {
+            case .success(let stringResult):
+                print("String result: \(stringResult)")
+            case .failure(let error):
+                print("Error retrieving String: \(String(describing: error))")
+            }
         }
     }
     /*

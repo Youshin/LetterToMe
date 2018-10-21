@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var letterView: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+
         let currentDateTime = Date()
         let formatter = DateFormatter()
         
@@ -30,6 +31,7 @@ class MainViewController: UIViewController {
 //        else {
 //            print("from DB with LETTER")
 //        }
+
         
     }
     

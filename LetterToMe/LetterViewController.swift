@@ -39,7 +39,7 @@ class LetterViewController: UIViewController {
         else {
             let number = Int.random(in: 3 ... 5)
             receiveDate = number * 7
-            client.callFunction(withName: "getLetter", withArgs: [receiveDate, currentDate.text, letterView.text]){ result in
+            client.callFunction(withName: "getLetter", withArgs: [receiveDate, currentDate.text ?? "", letterView.text]){ result in
                 
             }
 //            print("DB")
