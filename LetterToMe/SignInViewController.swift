@@ -22,9 +22,11 @@ class SignInViewController: UIViewController {
     @IBAction func signUpPressed(_ sender: Any) {
         print("Hello Button")
         UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseOut], animations: {
-            self.signInView.transform = CGAffineTransform(translationX: 50, y: 0)
-            self.signInView.alpha = 0.5
+            self.signInView.transform = CGAffineTransform(translationX: 0, y: -500)
+            //self.signInView.alpha = 0.5
         }, completion: nil)
+        
+        
     }
     
     
@@ -33,7 +35,11 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signUpDone(_ sender: Any) {
-        
+        UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseOut], animations: {
+            self.signInView.transform = CGAffineTransform(translationX: 50, y: 0)
+            self.signInView.alpha = 0.0
+        }, completion: nil)
+        //TODO: MAKE SURE THE USER INFO IS ENTERED INTO MONGODB STITCH
     }
     
     /*
