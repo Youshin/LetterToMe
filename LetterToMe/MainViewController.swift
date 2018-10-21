@@ -12,9 +12,27 @@ import StitchCore
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var letterView: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let currentDateTime = Date()
+        let formatter = DateFormatter()
         
+        formatter.dateFormat = "MM / dd / yyyy"
+        formatter.timeStyle = .none
+        formatter.dateStyle = .medium
+        
+        let dateString = formatter.string(from: currentDateTime)
+//        if(DB에 날짜가 없을때 (편지가 없을떄)){
+//            date?.text = dateString
+//        }
+//        else {
+//            print("from DB with LETTER")
+//        }
+
         
     }
+    
 }

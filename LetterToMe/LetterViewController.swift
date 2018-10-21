@@ -1,0 +1,40 @@
+//
+//  LetterViewController.swift
+//  LetterToMe
+//
+//  Created by HyeJin Kim on 10/21/18.
+//  Copyright © 2018 Youshin Kim. All rights reserved.
+//
+
+import UIKit
+import SVProgressHUD
+
+class LetterViewController: UIViewController {
+
+    @IBOutlet weak var currentDate: UILabel!
+    @IBOutlet weak var letterView: UITextView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let currentDateTime = Date()
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "MM / dd / yyyy"
+        formatter.timeStyle = .none
+        formatter.dateStyle = .medium
+        
+        let dateString = formatter.string(from: currentDateTime)
+        currentDate?.text = dateString
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func sentButton(_ sender: UIButton) {
+        if (letterView.text == "") {
+            SVProgressHUD.showInfo(withStatus: "Send a letter to you in the future")
+            SVProgressHUD.dismiss(withDelay: 5)
+        }
+        else {
+            print("DB")
+        }
+    }
+    
+}

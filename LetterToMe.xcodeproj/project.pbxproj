@@ -23,7 +23,13 @@
 		8450E299217C241400F742EB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E298217C241400F742EB /* SignInViewController.swift */; };
 		ABBDB214FA9915596180AD81 /* Pods_LetterToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6F01CEE806788D81682822 /* Pods_LetterToMe.framework */; };
 		DE02E04B217C43BD0015C2A8 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E049217C43BC0015C2A8 /* DiaryViewController.swift */; };
-		DE02E04C217C43BD0015C2A8 /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE02E04A217C43BD0015C2A8 /* Diary.storyboard */; };
+		DE02E04E217C48ED0015C2A8 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = DE02E04D217C48E40015C2A8 /* launch.png */; };
+		DE02E051217C4CCE0015C2A8 /* postcard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE02E050217C4CCE0015C2A8 /* postcard.jpg */; };
+		DE02E053217C4D540015C2A8 /* airmail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE02E052217C4D540015C2A8 /* airmail.jpg */; };
+		DE02E055217C4EB10015C2A8 /* paper-planes-3128885_1280.png in Resources */ = {isa = PBXBuildFile; fileRef = DE02E054217C4EB10015C2A8 /* paper-planes-3128885_1280.png */; };
+		DE02E057217C4FFC0015C2A8 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E056217C4FFC0015C2A8 /* LetterViewController.swift */; };
+		DE02E059217C52C70015C2A8 /* letter.png in Resources */ = {isa = PBXBuildFile; fileRef = DE02E058217C52C70015C2A8 /* letter.png */; };
+		DE02E05B217C534E0015C2A8 /* stationery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE02E05A217C534E0015C2A8 /* stationery.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +77,13 @@
 		A319BC6DD0432A4DD7D3FE95 /* Pods-LetterToMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeUITests/Pods-LetterToMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBC3012431C2DEC7064CC88A /* Pods-LetterToMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeTests/Pods-LetterToMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE02E049217C43BC0015C2A8 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
-		DE02E04A217C43BD0015C2A8 /* Diary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
+		DE02E04D217C48E40015C2A8 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		DE02E050217C4CCE0015C2A8 /* postcard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard.jpg; sourceTree = "<group>"; };
+		DE02E052217C4D540015C2A8 /* airmail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = airmail.jpg; sourceTree = "<group>"; };
+		DE02E054217C4EB10015C2A8 /* paper-planes-3128885_1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paper-planes-3128885_1280.png"; sourceTree = "<group>"; };
+		DE02E056217C4FFC0015C2A8 /* LetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterViewController.swift; sourceTree = "<group>"; };
+		DE02E058217C52C70015C2A8 /* letter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter.png; sourceTree = "<group>"; };
+		DE02E05A217C534E0015C2A8 /* stationery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stationery.jpg; sourceTree = "<group>"; };
 		E7599DDD4CA2BA57B5D5D688 /* Pods-LetterToMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMeUITests/Pods-LetterToMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,11 +153,11 @@
 		7A18D6E7217AF95B00BA3D22 /* LetterToMe */ = {
 			isa = PBXGroup;
 			children = (
-				DE02E04A217C43BD0015C2A8 /* Diary.storyboard */,
 				DE02E049217C43BC0015C2A8 /* DiaryViewController.swift */,
 				7A18D6E8217AF95B00BA3D22 /* AppDelegate.swift */,
 				7A18D6EA217AF95B00BA3D22 /* ViewController.swift */,
 				7A18D6EC217AF95B00BA3D22 /* Main.storyboard */,
+				DE02E054217C4EB10015C2A8 /* paper-planes-3128885_1280.png */,
 				7A18D6EF217AF95D00BA3D22 /* Assets.xcassets */,
 				7A18D6F1217AF95D00BA3D22 /* LaunchScreen.storyboard */,
 				7A18D6F4217AF95D00BA3D22 /* Info.plist */,
@@ -153,7 +165,9 @@
 				7A741431217C135E000FC302 /* accountViewController.swift */,
 				8450E296217C226E00F742EB /* SignInScreen.storyboard */,
 				8450E298217C241400F742EB /* SignInViewController.swift */,
+				DE02E04F217C48F80015C2A8 /* Image */,
 				7AA6F70C217C3B5D003D3934 /* MainViewController.swift */,
+				DE02E056217C4FFC0015C2A8 /* LetterViewController.swift */,
 			);
 			path = LetterToMe;
 			sourceTree = "<group>";
@@ -184,6 +198,18 @@
 				4A48BACFFDA9C500D0981D72 /* Pods_LetterToMeUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE02E04F217C48F80015C2A8 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DE02E05A217C534E0015C2A8 /* stationery.jpg */,
+				DE02E058217C52C70015C2A8 /* letter.png */,
+				DE02E050217C4CCE0015C2A8 /* postcard.jpg */,
+				DE02E052217C4D540015C2A8 /* airmail.jpg */,
+				DE02E04D217C48E40015C2A8 /* launch.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,11 +321,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE02E059217C52C70015C2A8 /* letter.png in Resources */,
+				DE02E053217C4D540015C2A8 /* airmail.jpg in Resources */,
+				DE02E055217C4EB10015C2A8 /* paper-planes-3128885_1280.png in Resources */,
 				7A18D6F3217AF95D00BA3D22 /* LaunchScreen.storyboard in Resources */,
 				7A18D6F0217AF95D00BA3D22 /* Assets.xcassets in Resources */,
+				DE02E04E217C48ED0015C2A8 /* launch.png in Resources */,
+				DE02E051217C4CCE0015C2A8 /* postcard.jpg in Resources */,
 				8450E297217C226E00F742EB /* SignInScreen.storyboard in Resources */,
 				7A18D6EE217AF95B00BA3D22 /* Main.storyboard in Resources */,
-				DE02E04C217C43BD0015C2A8 /* Diary.storyboard in Resources */,
+				DE02E05B217C534E0015C2A8 /* stationery.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +510,7 @@
 				7A18D6E9217AF95B00BA3D22 /* AppDelegate.swift in Sources */,
 				7A741432217C135E000FC302 /* accountViewController.swift in Sources */,
 				DE02E04B217C43BD0015C2A8 /* DiaryViewController.swift in Sources */,
+				DE02E057217C4FFC0015C2A8 /* LetterViewController.swift in Sources */,
 				7AA6F70D217C3B5D003D3934 /* MainViewController.swift in Sources */,
 				8450E299217C241400F742EB /* SignInViewController.swift in Sources */,
 				7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */,

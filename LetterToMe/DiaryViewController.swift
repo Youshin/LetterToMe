@@ -42,7 +42,6 @@ class DiaryViewController: UIViewController, UITextViewDelegate {
         formatter.dateStyle = .medium
         
         let dateString = formatter.string(from: currentDateTime)
-        print(dayText)
         dayText.delegate = self
         dateLabel?.text = dateString
         // Do any additional setup after loading the view.
