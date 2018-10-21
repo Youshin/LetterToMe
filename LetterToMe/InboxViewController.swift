@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import StitchCore
 
 class InboxViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var letterTableView: UITableView!
     
+    var letters : [String] = []
+    let client = Stitch.defaultAppClient!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         letterTableView.delegate = self
         letterTableView.dataSource = self
+        getLetter()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,7 +32,19 @@ class InboxViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
-
+    func getLetter() {
+        let userid = client.auth.currentUser?.id ?? ""
+        print(userid)
+        client.callFunction(withName: "getLetter", withArgs: [userid],withRequestTimeout: 5.0
+        ) { (result: StitchResult) in
+            switch result {
+            case .success(let stringResult):
+                print("String result: \(stringResult)")
+            case .failure(let error):
+                print("Error retrieving String: \(String(describing: error))")
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 
