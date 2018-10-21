@@ -13,4 +13,4 @@ we have not completed the app yet, but it was pretty interesting using the mongo
 We need to implement more functionality in the app, we will keep working on it until mongoDB to improve their documentation on iOS
 
 ## Application is not yet completed!
-However, we will keep on track to finish on the project in future, so stay tuned on the repository :)
+However, we will keep it on track to finish on the project in future, so stay tuned on the repository :)
