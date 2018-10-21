@@ -17,8 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
-        // in `application(_:didFinishLaunchWithOptions)`
         do {
             _ = try Stitch.initializeDefaultAppClient(
                 withClientAppID: "my_dear_diary-xqjvv"
@@ -31,18 +29,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // class for more details.
         }
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-       
-       
-        
-        window?.rootViewController = CustomTabBarController()
-        UITabBar.appearance().backgroundColor = UIColor.white
-        UINavigationBar.appearance().barTintColor = UIColor(red: 101/255, green: 210/255, blue: 110/255, alpha: 1)
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-        
-        application.statusBarStyle = .lightContent
-        
+   
+//
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.makeKeyAndVisible()
+//
+//
+//
+//        window?.rootViewController = CustomTabBarController()
+//        UITabBar.appearance().backgroundColor = UIColor.white
+//
+//
+//        UINavigationBar.appearance().barTintColor = UIColor(red: 101/255, green: 210/255, blue: 110/255, alpha: 1)
+//
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+
+       //application.statusBarStyle = .lightContent
+
+        // in `application(_:didFinishLaunchWithOptions)`
         
         
         // Override point for customization after application launch.

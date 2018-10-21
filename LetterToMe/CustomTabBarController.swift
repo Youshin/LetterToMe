@@ -13,36 +13,43 @@ class CustomTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let homeController = ViewController(collectionViewLayout: UICollectionViewLayout())
-        let navigationController = UINavigationController(rootViewController: homeController)
-        
-//        navigationController.title = "Home"
-        navigationController.tabBarItem.image = UIImage(named: "1")
-        
-        let secondController = UIViewController()
-        let secondNavigationController = UINavigationController(rootViewController: secondController)
-//        secondNavigationController.title = "Second"
-        secondNavigationController.tabBarItem.image = UIImage(named: "2")
-        
-        let thirdController = UIViewController()
-        let thirdNavigationController = UINavigationController(rootViewController: thirdController)
-//        thirdNavigationController.title = "third"
-        thirdNavigationController.tabBarItem.image = UIImage(named: "3")
-        
-        let fourthController = UIViewController()
-        let fourthNavigationController = UINavigationController(rootViewController: fourthController)
-//        fourthNavigationController.title = "fourth"
-        fourthNavigationController.tabBarItem.image = UIImage(named: "4")
-        
-        let fifthController = UIViewController()
-        let fifthNavigationController = UINavigationController(rootViewController: fifthController)
-//        fifthNavigationController.title = "fifth"
-        fifthNavigationController.tabBarItem.image = UIImage(named: "5")
-        
-        viewControllers = [navigationController, secondNavigationController, thirdNavigationController, fourthNavigationController, fifthNavigationController]
-        
-        
-        
+//        let homeController = ViewController(collectionViewLayout: UICollectionViewLayout())
+//        let navigationController = UINavigationController(rootViewController: homeController)
+//        
+////        navigationController.title = "Home"
+//        navigationController.tabBarItem.image = UIImage(named: "1")
+//        
+//        let secondController = UIViewController()
+//        let secondNavigationController = UINavigationController(rootViewController: secondController)
+////        secondNavigationController.title = "Second"
+//        secondNavigationController.tabBarItem.image = UIImage(named: "2")
+//        
+//        let thirdController = UIViewController()
+//        let thirdNavigationController = UINavigationController(rootViewController: thirdController)
+////        thirdNavigationController.title = "third"
+//        thirdNavigationController.tabBarItem.image = UIImage(named: "3")
+//        
+//        let fourthController = UIViewController()
+//        let fourthNavigationController = UINavigationController(rootViewController: fourthController)
+////        fourthNavigationController.title = "fourth"
+//        fourthNavigationController.tabBarItem.image = UIImage(named: "4")
+//        
+//        let fifthController = UIViewController()
+//        let fifthNavigationController = UINavigationController(rootViewController: fifthController)
+////        fifthNavigationController.title = "fifth"
+//        fifthNavigationController.tabBarItem.image = UIImage(named: "5")
+//        
+//        viewControllers = [navigationController, secondNavigationController, thirdNavigationController, fourthNavigationController, fifthNavigationController]
+//        
+//        tabBar.isTranslucent = false
+//        
+//        let topBoarder = CALayer()
+//        topBoarder.frame = CGRect(x: 0, y: 0, width: 1000, height: 0.5)
+//        topBoarder.backgroundColor = UIColor(red: 229, green: 231, blue: 235, alpha: 1).cgColor
+//        
+//        tabBar.layer.addSublayer(topBoarder)
+//        tabBar.clipsToBounds = true
+//        
         
     }
 }

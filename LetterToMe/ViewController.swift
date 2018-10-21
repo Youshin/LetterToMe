@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import StitchCore
 
-class ViewController: UICollectionViewController {
+class ViewController: UIViewController {
     
   
     private lazy var stitchClient = Stitch.defaultAppClient!
@@ -27,19 +27,19 @@ class ViewController: UICollectionViewController {
         
         if !client.auth.isLoggedIn {
             print("hello")
-            
-        }
-        
-        let credential = UserPasswordCredential.init(withUsername: "youshin", withPassword: "123456")
-        
-        client.auth.login(withCredential: credential) { result in
-            switch result {
-            case .success:
-                print("Successfully logged in")
-            case .failure(let error):
-                print("Error logging in with email/password auth: \(error)")
-            }
-        }
+            notSignedIn()
+        }else {
+//
+//        let credential = UserPasswordCredential.init(withUsername: "youshin", withPassword: "123456")
+//
+//        client.auth.login(withCredential: credential) { result in
+//            switch result {
+//            case .success:
+//                print("Successfully logged in")
+//            case .failure(let error):
+//                print("Error logging in with email/password auth: \(error)")
+//            }
+//        }
         
 //        client.auth.login(withCredential: AnonymousCredential()) { result in
 //            switch result {
@@ -63,13 +63,19 @@ class ViewController: UICollectionViewController {
                 print("Error retrieving String: \(String(describing: error))")
             }
         }
-        
+        }
         // in a view controller's properties, for example
    
         
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    func notSignedIn() {
+        let nextVC = accountViewController() 
+        //you can set properties of the nextVC here
+            
+        self.present(nextVC, animated: true, completion: nil)
+    }
   
     
     override func didReceiveMemoryWarning() {
