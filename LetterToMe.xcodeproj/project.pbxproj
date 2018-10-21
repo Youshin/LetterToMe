@@ -18,6 +18,7 @@
 		7A18D709217AF95D00BA3D22 /* LetterToMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18D708217AF95D00BA3D22 /* LetterToMeUITests.swift */; };
 		7A741432217C135E000FC302 /* accountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A741431217C135E000FC302 /* accountViewController.swift */; };
 		7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A92C2B9217B187700A26298 /* CustomTabBarController.swift */; };
+		7AA6F70D217C3B5D003D3934 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6F70C217C3B5D003D3934 /* MainViewController.swift */; };
 		8450E297217C226E00F742EB /* SignInScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450E296217C226E00F742EB /* SignInScreen.storyboard */; };
 		8450E299217C241400F742EB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450E298217C241400F742EB /* SignInViewController.swift */; };
 		ABBDB214FA9915596180AD81 /* Pods_LetterToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6F01CEE806788D81682822 /* Pods_LetterToMe.framework */; };
@@ -60,6 +61,7 @@
 		7A18D70A217AF95E00BA3D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A741431217C135E000FC302 /* accountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountViewController.swift; sourceTree = "<group>"; };
 		7A92C2B9217B187700A26298 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		7AA6F70C217C3B5D003D3934 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8450E296217C226E00F742EB /* SignInScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInScreen.storyboard; sourceTree = "<group>"; };
 		8450E298217C241400F742EB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		866CF5EBB2C09F38842FCC4F /* Pods-LetterToMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterToMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetterToMe/Pods-LetterToMe.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				7A741431217C135E000FC302 /* accountViewController.swift */,
 				8450E296217C226E00F742EB /* SignInScreen.storyboard */,
 				8450E298217C241400F742EB /* SignInViewController.swift */,
+				7AA6F70C217C3B5D003D3934 /* MainViewController.swift */,
 			);
 			path = LetterToMe;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				7A18D6EB217AF95B00BA3D22 /* ViewController.swift in Sources */,
 				7A18D6E9217AF95B00BA3D22 /* AppDelegate.swift in Sources */,
 				7A741432217C135E000FC302 /* accountViewController.swift in Sources */,
+				7AA6F70D217C3B5D003D3934 /* MainViewController.swift in Sources */,
 				8450E299217C241400F742EB /* SignInViewController.swift in Sources */,
 				7A92C2BA217B187700A26298 /* CustomTabBarController.swift in Sources */,
 			);

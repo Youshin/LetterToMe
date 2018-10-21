@@ -40,6 +40,7 @@ class SignInViewController: UIViewController {
             self.signInView.alpha = 0.0
         }, completion: nil)
         //TODO: MAKE SURE THE USER INFO IS ENTERED INTO MONGODB STITCH
+        
     }
     
     /*
